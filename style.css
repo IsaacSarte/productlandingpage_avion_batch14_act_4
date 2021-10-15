@@ -48,7 +48,19 @@ header {
 
 header .logo .imgLogo {
     width: 150px;
+    animation: fade_to_left 1.5s;
 }
+
+    @keyframes fade_to_left {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 
 header .navbar ul {
     display: flex;
@@ -56,7 +68,19 @@ header .navbar ul {
     justify-content: center;
     list-style: none;
     text-transform: capitalize;
+    animation: fade_to_right 1.5s;
 }
+
+    @keyframes fade_to_right {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 
 header .navbar ul li a {
     position: relative;
@@ -304,7 +328,19 @@ section {
     color: var(--white);
     font-size: 2rem;
     font-weight: var(--weight - 100);
+    animation: fade_in 1.5s;
 }
+
+    @keyframes fade_in {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
 
 .homeButton #homeBtn:hover {
     background: var(--gray);
