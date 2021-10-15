@@ -355,6 +355,19 @@ section {
                             padding: 3rem 4rem;
                         }
                     }
+                    @media screen and (max-width: 1000px) {
+                        .slider {
+                            margin-top: -35%;
+                        }
+                        .man-btn,
+                        .nav-auto div {
+                            margin-right: 490px;
+                        }
+                        .homeButton {
+                            margin-top: -25%;
+                            margin-bottom: 15%;
+                        }
+                    }
                     @media screen and (max-width: 768px) {
                         .slider {
                             margin-top: -35%;
