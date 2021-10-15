@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung - Landing Page [Avion]</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+    <header>
+
+        <a href="" class="logo">
+            <img class="imgLogo" src="images/samsungLogo.png" alt="" />
+            <!-- <img src="images/samsungLogo.png" alt="" /> -->
+        </a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#mobile">mobile</a></li>
+                <li><a href="#tv">tV</a></li>
+                <li><a href="#appliances">appliances</a></li>
+                <li><a href="#explore">explore</a></li>
+                <li><a href="#support">support</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+    <section class="home" id="home">
+        <!-- image slider -->
+        <div class="slider">
+            <div class="slides">
+                <!-- buttons -->
+                <input type="radio" name="rBtn" id="radio1">
+                <input type="radio" name="rBtn" id="radio2">
+                <input type="radio" name="rBtn" id="radio3">
+                <!-- images -->
+                <div class="slide first">
+                    <img src="images/h1.jpg" alt=""/>
+                </div>
+                <div class="slide">
+                    <img src="images/h2.jpg" alt=""/>
+                </div>
+                <div class="slide">
+                    <img src="images/h3.jpg" alt=""/>
+                </div>
+                <!-- auto nav -->
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <!-- manual nav -->
+            <div class="nav-manual">
+                <label for="radio1" class="man-btn"></label>
+                <label for="radio2" class="man-btn"></label>
+                <label for="radio3" class="man-btn"></label>
+            </div>
+        </div>
+
+    </section>
+
+<!-- home section ends -->
+
+<!-- mobile section starts  -->
+
+    <section class="mobile" id="mobile">
+
+
+
+    </section>
+
+<!-- mobile section ends -->
+
+<!-- tv section starts  -->
+
+<section class="tv" id="tv">
+
+
+
+</section>
+
+<!-- tv section ends -->
+
+<!-- appliances section starts  -->
+
+<section class="appliances" id="appliances">
+
+
+
+</section>
+
+<!-- appliances section ends -->
+
+<!-- explore section starts  -->
+
+<section class="explore" id="explore">
+
+
+
+</section>
+
+<!-- explore section ends -->
+
+<!-- support section starts  -->
+
+<section class="support" id="support">
+
+
+
+</section>
+
+<!-- support section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="main.js"></script>
+
+<!-- slider js -->
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3) {
+            counter = 1;
+        }
+    },5000);
+</script>
+
+</body>
+</html>
