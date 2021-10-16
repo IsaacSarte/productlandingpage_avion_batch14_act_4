@@ -19,6 +19,25 @@
     transition: all .2s linear;
 }
 
+::-webkit-scrollbar {
+    scrollbar-width: thin;
+    background: #fff;
+}
+
+::-webkit-scrollbar-track {
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #000, #222);
+    border-radius: 1vw;
+    border: .25em solid #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
 *::selection {
     background:#fff;
     color:#333;
