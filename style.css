@@ -826,6 +826,7 @@ section {
                             transform: translateX(80px);
                         }
                         .tvContents .card {
+                            margin-top: 2,5rem;
                             position: relative;
                             width: 30%;
                             height: 360px;
@@ -866,6 +867,8 @@ section {
                             margin: 0 auto;
                             transform: translateX(3.5rem);
                             margin-left: 5rem;
+                            margin-top: 3rem;
+                            margin-bottom: 25rem;
                         }
                         .card .contentBx {
                             display: flex;
