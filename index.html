@@ -9,9 +9,10 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
+    <!-- image carousel link -->
+    <link rel="stylesheet" href="jquery.flipster.min.css">
 
 </head>
 <body>
@@ -145,6 +146,65 @@
 
     <section class="tv" id="tv">
 
+        <h1 class="heading">Explore Samsung TVs that meet your needs</h1>
+        <!-- tv options -->
+        <div class="tvOpts">
+            <h1 class="allTV" id="cursorH1" data-filter="all">All</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".cat">Category</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".size">Size</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".res">Resolution</h1>
+        </div>
+
+        <!-- tv image reflections -->
+        <div class="boxTV">
+            <div class="carousel">
+                <ul>
+                    <li><img src="images/tv/r1.jpg" alt=""></li>
+                    <li><img src="images/tv/r2.jpg" alt=""></li>
+                    <li><img src="images/tv/r3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tv options contents -->
+        <div class="tvContents">
+            <div class="card cat">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv1.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/smartphones/?product1=sm-f916bznaxtc&product2=sm-g996bzvgphl&product3=sm-a526bzkhxtc';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card size showSize">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv3.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/smartphones/?product1=sm-f916bznaxtc&product2=sm-g996bzvgphl&product3=sm-a526bzkhxtc';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card res showRes">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv5.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/smartphones/?product1=sm-f916bznaxtc&product2=sm-g996bzvgphl&product3=sm-a526bzkhxtc';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
@@ -183,6 +243,7 @@
 
 <!-- jquery cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- custom js file link  -->
     <script src="main.js"></script>
@@ -197,6 +258,31 @@
                 counter = 1;
             }
         },5000);
+    </script>
+
+<!-- tv image js -->
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+            
+        });
+    </script>
+
+<!-- tv options js -->
+    <script src="mixitup.min.js"></script>
+
+    <script>
+        const mixer = mixitup('.tvContents', {
+            selectors: {
+                target: '.card'
+            },
+            animation: {
+                duration: 500
+            }
+        });
     </script>
 
 </body>

@@ -694,12 +694,191 @@ section {
                         }
                     }
 
+
+/* ---TV Section--- */
+
 .tv {
-    background:#222;
+    background: var(--white);
 }
+
+.tv .heading {
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.tvOpts {
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.tvOpts h1 {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tvOpts h1:hover {
+    color: var(--gray);
+    text-decoration: underline solid;
+}
+
+.tvContents {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.tvContents .card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    margin-left: 10rem;
+    border-radius: 20px;
+    transform: translateX(-5rem);
+    margin-bottom: 10rem;
+}
+
+.tvContents .card .imgBx,
+.tvContents .card .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tvContents .card .contentBx .content button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    outline: auto;
+    outline-style: round;
+    border-radius: 25px;
+    background: var(--white);
+    color: var(--black);
+    font-size: 1.7rem;
+    font-weight: var(--weight);
+    animation: fade_in 1.5s;
+}
+
+.tvContents .card .contentBx .content button:hover {
+    background: rgb(189, 187, 187);
+}
+
+.card .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .contentBx .content {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateY(300px);
+}
+
+.card:hover .contentBx .content {
+    transform: translateY(150px);
+}
+
+.tvContents .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxTV {
+    width: 100%;
+    height: 35vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.boxTV .carousel {
+    width: 300px;
+    margin: 20px auto 0;
+    overflow: visible;
+}
+
+.carousel img {
+    height: 100%;
+    -webkit-box-reflect: below 5px 
+        linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+}
+
+                    @media screen and (min-width: 320px) and (max-width: 414px) {
+                        .tv .heading {
+                            font-size: 2.5rem;
+                        }
+                        .tvOpts h1 {
+                            display: inline-block;
+                            flex-wrap: nowrap;
+                            font-size: 2rem;
+                            padding: 1rem;
+                        }
+                        .boxTV {
+                            width: 100%;
+                            height: 25vh;
+                        }
+                        .boxTV .carousel {
+                            width: 300px;
+                        }
+                        .carousel img {
+                            height: 150px;
+                        }
+                        .tvContents {
+                            position: relative;
+                            display: grid;
+                            grid-template-columns: repeat(3,33.3%);
+                        }
+                        .tvContents .card {
+                            position: relative;
+                            width: 150px;
+                            height: 200px;
+                            overflow: hidden;
+                            border-radius: 20px;
+                            margin: 0 auto;
+                            transform: translateX(-9rem);
+                            margin-left: 5rem;
+                        }
+                        .card .contentBx {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .card .contentBx .content {
+                            position: relative;
+                            padding: 30px;
+                            z-index: 1;
+                            transition: 0.5s;
+                            transform: translateY(200px);
+                        }
+                        .card:hover .contentBx .content {
+                            transform: translate(-30px, 40px);
+                        }
+                        .tvContents .card .contentBx .content button {
+                            padding: 1rem 2rem;
+                            border-radius: 25px;
+                            font-size: 1.5rem;
+                        }
+                    }
 
 .appliances {
     min-height: 100vh;
+    background: var(--white_sec);
 }
 
 .explore {
