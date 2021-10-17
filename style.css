@@ -45,40 +45,11 @@
 
 .fade-in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 500ms ease-in;
 }
 
 .fade-in.appear {
     opacity: 1;
-}
-
-.fade-left {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 1000ms ease-in;
-}
-
-.fade-left.appearLeft {
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.from-left {
-    transform: translateX(-50%);
-}
-
-.from-right {
-    transform: translateX(50%);
-}
-
-.from-left,
-.from-right {
-    transition: transform 400ms ease-in;
-}
-
-.from-left.appear,
-.from-right.appear {
-    transform: translateX(0);
 }
 
 html {
