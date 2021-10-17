@@ -619,6 +619,27 @@ section {
                         }
                         .seeBtn #mBtn {
                             margin-top: 0%;
+                            padding: 2.5rem 3.5rem;
+                        }
+                        .container {
+                            grid-column-gap: 10px;
+                            grid-template-rows: 400px;
+                        }
+                        .container .item img {
+                            height: 150px;
+                        }
+                        .container .item h1 {
+                            font-size: 2rem;
+                        }
+                        .container .item button {
+                            width: 80%;
+                            height: 40px;
+                            padding: 1rem 2rem;
+                            font-size: 1.85rem;
+                        }
+                        .secBtn #mBtn {
+                            margin-top: 80%;
+                            padding: 3rem 5rem;
                         }
                     }
                     @media screen and (max-width: 768px) {
@@ -819,6 +840,19 @@ section {
         linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
 }
 
+                    @media screen and (max-width: 1024px) {
+                        .tvContents {
+                            max-width: 120%;
+                            margin-left: -150px;
+                            transform: translateX(80px);
+                        }
+                        .tvContents .card {
+                            margin-top: 2,5rem;
+                            position: relative;
+                            width: 30%;
+                            height: 360px;
+                        }
+                    }
                     @media screen and (max-width: 768px) {
                         .tvContents {
                             max-width: 120%;
