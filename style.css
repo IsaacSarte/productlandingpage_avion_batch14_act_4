@@ -820,7 +820,16 @@ section {
 }
 
                     @media screen and (max-width: 768px) {
-                        
+                        .tvContents {
+                            max-width: 120%;
+                            margin-left: -150px;
+                            transform: translateX(80px);
+                        }
+                        .tvContents .card {
+                            position: relative;
+                            width: 30%;
+                            height: 360px;
+                        }
                     }
                     @media screen and (min-width: 320px) and (max-width: 414px) {
                         .tv .heading {
@@ -846,6 +855,7 @@ section {
                             position: relative;
                             display: grid;
                             grid-template-columns: repeat(3,33.3%);
+                            max-width: 80%;
                         }
                         .tvContents .card {
                             position: relative;
@@ -854,7 +864,7 @@ section {
                             overflow: hidden;
                             border-radius: 20px;
                             margin: 0 auto;
-                            transform: translateX(-9rem);
+                            transform: translateX(3.5rem);
                             margin-left: 5rem;
                         }
                         .card .contentBx {
@@ -870,7 +880,7 @@ section {
                             transform: translateY(200px);
                         }
                         .card:hover .contentBx .content {
-                            transform: translate(-30px, 40px);
+                            transform: translate(-30px, 60px);
                         }
                         .tvContents .card .contentBx .content button {
                             padding: 1rem 2rem;
