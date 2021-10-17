@@ -819,6 +819,9 @@ section {
         linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
 }
 
+                    @media screen and (max-width: 768px) {
+                        
+                    }
                     @media screen and (min-width: 320px) and (max-width: 414px) {
                         .tv .heading {
                             font-size: 2.5rem;
