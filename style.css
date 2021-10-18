@@ -1207,12 +1207,12 @@ section {
                             grid-template-rows: 100px;
                         }
                         .explore .container .item {
-                            margin-left: 30%;
+                            margin-left: 35%;
                             margin-right: auto;
                         }
                         .explore .container .item h2 {
-                            font-size: 1.5rem;
-                            transform: translateX(-3.5rem);
+                            font-size: 1.2rem;
+                            transform: translateX(-2rem);
                         }
                         .explore .container .item1 img {
                             margin-top: -5rem;
@@ -1235,7 +1235,7 @@ section {
                             padding-top: 25rem;
                         }
                         .container-two .item {
-                            margin-left: 25%;
+                            margin-left: 30%;
                             margin-right: auto;
                         }
                         .container-two .item1 img {
@@ -1253,8 +1253,8 @@ section {
                             margin-top: 5rem;
                         }
                         .container-two .item h2 {
-                            font-size: 1.5rem;
-                            transform: translateX(-2rem);
+                            font-size: 1.2rem;
+                            transform: translateX(0rem);
                         }
                     }
 
