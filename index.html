@@ -296,8 +296,6 @@
                 </strong></h2>
             </div>
         </div>
-
-
     </section>
 
 <!-- explore section ends -->
@@ -305,9 +303,28 @@
 <!-- support section starts  -->
 
     <section class="support" id="support">
-
-
-
+        <!-- form container -->
+        <div class="container min-vh-100">
+            <div class="row justify-content-center">
+                <h1 class="heading">Support Us</h1>
+                <div class="col-md-10" data-aos="flip-down">
+                    <!-- main form -->
+                    <form name="Form">
+                        <div class="inputBox">
+                            <input type="text" name="nameTxt" id="nameText" placeholder="Full Name" required>
+                            <input type="number" name="numTxt" id="phoneText" placeholder="Phone">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="emailInput" id="emailText" placeholder="Email" required>
+                            <input type="number" id="ageText" placeholder="Age" min="18">
+                        </div>
+                        <textarea name="txtArea" id="textArea" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit" class="button" onclick="submitForm()">
+                        <h3 id="h3Text"><strong></strong></h3>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
 <!-- support section ends -->
@@ -316,8 +333,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 <!-- custom js file link  -->
     <script src="main.js"></script>
+    <script src="form.js"></script>
     <script src="onscroll.js"></script>
 
 <!-- slider js -->

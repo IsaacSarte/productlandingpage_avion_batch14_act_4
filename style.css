@@ -1403,3 +1403,67 @@ section {
     min-height: 100vh;
     background: var(--white_sec);
 }
+
+.support .container {
+    display: flex;
+    align-items: center;
+}
+
+.support .heading {
+    color: var(--black);
+    font-size: 3.5rem;
+    margin-top: -10rem;
+}
+
+.support form {
+    text-align: left;
+}
+
+.support form input::placeholder {
+    text-align: left;
+}
+
+.support form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.support form .inputBox input {
+    height: 6rem;
+    width: 49%;
+    padding: 0 5rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+  
+.support form textarea {
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.support form input[type="submit"] {
+    width: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+  
+.support form input[type="submit"]:hover {
+    background: var(--gray);
+}
+
+.support .container h3 {
+    margin-top: 1rem;
+    color: rgb(85, 5, 5);
+    font-size: 2rem;
+    font-weight: var(--weight);
+}
