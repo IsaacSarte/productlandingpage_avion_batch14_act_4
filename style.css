@@ -1554,3 +1554,15 @@ section {
                     }
 
 /* ---Footer Section--- */
+
+footer hr {
+    color: var(--black);
+    font-weight: var(--weight + 200);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+}
+footer .botFooter .heading {
+    color: var(--black);
+}
