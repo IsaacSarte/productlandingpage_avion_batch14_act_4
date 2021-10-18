@@ -1220,18 +1220,19 @@ section {
                             height: 150px;
                         }
                         .explore .container .item2 img {
-                            margin-top: 5rem;
-                            height: 210px;
+                            margin-top: 10rem;
+                            width: 300px;
+                            height: 150px;
                         }
                         .explore .container .item3 img {
-                            margin-top: 8rem;
+                            margin-top: 10rem;
                             height: 150px;
                         }
                         .container-two {
                             display: grid;
                             grid-template-columns: repeat(1,100%);
                             grid-template-rows: 100px;
-                            padding-top: 20rem;
+                            padding-top: 25rem;
                         }
                         .container-two .item {
                             margin-left: 25%;
@@ -1245,11 +1246,11 @@ section {
                         .container-two .item2 img {
                             width: 150px;
                             height: 150px;
-                            margin-top: 2rem;
+                            margin-top: 5rem;
                         }
                         .container-two .item3 img {
                             width: 150px;
-                            margin-top: 2rem;
+                            margin-top: 5rem;
                         }
                         .container-two .item h2 {
                             font-size: 1.5rem;
