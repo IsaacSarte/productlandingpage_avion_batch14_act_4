@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Samsung - Landing Page [Avion]</title>
-
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" sizes="16x16" />
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home_section/home.css" />
+    <link rel="stylesheet" href="styles/tv_section/tv.css" />
+
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css" />
     <!-- image carousel link -->
-    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <link rel="stylesheet" href="styles/jquery.flipster.min.css">
 
 </head>
 <body>
@@ -364,35 +368,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 <!-- custom js file link  -->
-    <script src="main.js"></script>
-    <script src="form.js"></script>
-    <script src="onscroll.js"></script>
-
-<!-- slider js -->
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 3) {
-                counter = 1;
-            }
-        },5000);
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/onscroll.js"></script>
 
 <!-- tv image js -->
-    <script src="jquery.flipster.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
 
     <script>
         $('.carousel').flipster({
             style:'carousel',
             spacing: -0.3,
-
         });
     </script>
 
 <!-- tv options js -->
-    <script src="mixitup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
 
     <script>
         const mixer = mixitup('.tvContents', {
