@@ -27,15 +27,15 @@
 
 <!-- header section starts  -->
 
-    <header>
+    <header id="header">
 
-        <a href="" class="logo">
+        <a href="" class="logo" id="header-img">
             <img class="imgLogo" src="images/samsungLogo.png" alt="" />
         </a>
 
         <div id="menu" class="fas fa-bars"></div>
 
-        <nav class="navbar">
+        <nav class="navbar" id="nav-bar">
             <ul>
                 <li><a class="active" href="#home">home</a></li>
                 <li><a href="#mobile">mobile</a></li>
@@ -99,7 +99,7 @@
     <section class="mobile" id="mobile">
 
         <!-- video mobile -->
-        <div class="vidMob">
+        <div class="vidMob" id="video">
             <video controls>
                 <source src="images/mobVid.mp4" type="video/mp4">
             </video>
@@ -317,7 +317,7 @@
                 <h1 class="heading">Support Us</h1>
                 <div class="col-md-10" data-aos="flip-down">
                     <!-- main form -->
-                    <form name="Form">
+                    <form name="Form" id="form">
                         <div class="inputBox">
                             <input type="text" name="nameTxt" id="nameText" placeholder="Full Name" required>
                             <input type="number" name="numTxt" id="phoneText" placeholder="Phone">
@@ -327,7 +327,7 @@
                             <input type="number" id="ageText" placeholder="Age" min="18">
                         </div>
                         <textarea name="txtArea" id="textArea" cols="30" rows="10" placeholder="Message" required></textarea>
-                        <input type="submit" value="Submit" class="button" onclick="submitForm()">
+                        <input type="submit" value="Submit" class="button" onclick="submitForm()" id="submit">
                         <h3 id="h3Text"><strong></strong></h3>
                     </form>
                 </div>
